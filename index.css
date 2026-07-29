@@ -679,6 +679,9 @@
     .game-info-grid {
       grid-template-columns: 1fr;
     }
+    .gif-card {
+      height: 100vh;
+    }
   }
 
   @media (max-width: 600px) {
@@ -713,5 +716,8 @@
 
     .section-title {
       font-size: 1.5rem;
+    }
+    .gif-card {
+      height: 50vh;
     }
   }
