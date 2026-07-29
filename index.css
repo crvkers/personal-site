@@ -241,6 +241,10 @@
       gap: 0.75rem;
     }
 
+    .section-title:hover {
+      color: var(--accent-cyan);
+    }
+
     .section-title::before {
       content: '//';
       font-family: 'Fira Code', monospace;
