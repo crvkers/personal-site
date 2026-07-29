@@ -624,7 +624,6 @@
       box-shadow: 0 0 15px var(--accent-glow);
     }
 
-    /* Bottom About Block */
     .about-card {
       height: 120px;
       padding: 1.25rem;
@@ -649,3 +648,70 @@
       color: var(--text-muted);
       line-height: 1.5;
     }
+  @media (max-width: 992px) {
+    html, body {
+      height: auto;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    body {
+      padding: 1rem;
+    }
+
+    .app-viewport {
+      grid-template-columns: 1fr;
+      height: auto;
+      max-height: none;
+      gap: 1.5rem;
+    }
+
+    .main-content {
+      height: auto;
+      overflow-y: visible;
+      padding: 1.5rem;
+    }
+
+    .left-column, .right-column {
+      height: auto;
+    }
+
+    .game-info-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .nav-sidebar {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+    }
+
+    .nav-btn {
+      justify-content: center;
+      font-size: 0.65rem;
+      padding: 0 6px;
+    }
+
+    .cards-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .anime-poster-grid {
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    }
+
+    .music-track-item {
+      grid-template-columns: 40px 1fr auto;
+      gap: 0.75rem;
+    }
+
+    .track-album {
+      display: none;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+    }
+  }
