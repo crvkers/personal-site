@@ -1,8 +1,8 @@
     // Tab Dynamic Accent Theme Colors & GIFs
     const tabThemeData = {
       home: { 
-        color: '#ffffff', 
-        glow: 'rgba(255, 255, 255, 0.2)',
+        color: '#752cad', 
+        glow: 'rgba(115, 19, 119, 0.2)',
         gif: 'https://static2.klipy.com/ii/925f17378dd1893b674a723c07535afe/c5/a5/2EIciP3p.gif'
       },
       projects: { 
@@ -38,7 +38,7 @@
 
         // Dynamically update CSS Variables & Top GIF based on tab selection
         if (tabThemeData[targetId]) {
-          document.documentElement.style.setProperty('--accent-cyan', tabThemeData[targetId].color);
+          document.documentElement.style.setProperty('--accent-color', tabThemeData[targetId].color);
           document.documentElement.style.setProperty('--accent-glow', tabThemeData[targetId].glow);
           
           if (topGifImg) {
